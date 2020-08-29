@@ -24,24 +24,21 @@ class Counter extends Component {
     console.log(this.state.value)
   }
 
-  // let onIncrement = (value)=>{value: value + 1};
-  // let onDecrement = (value)=>{value: value - 1};
-
   onIncrement(){
     this.setState(prevState=>{
-            return {value: prevState.value + 1, total: this.state.value + this.state.value}
+            return {value: prevState.value + 1}
         });
   }
 
   onDecrement(){
     this.setState(prevState=>{
-            return {value: prevState.value - 1, total: this.state.value - this.state.value}
+            return {value: prevState.value - 1}
         });
   }
 
   render() {
-    const { value } = this.props;
-    this.state.sum += this.state.value;
+    //const { value } = this.props;
+    //this.state.sum += this.state.value;
     console.log(this.state.value)
     return (
       <div>

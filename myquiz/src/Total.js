@@ -6,7 +6,7 @@ function Total(props) {
    
     return(
         <div>
-          <p>Total Components:{props.compo}</p>
+          <p>Total:{props.compo}</p>
         </div>
     );
 }
